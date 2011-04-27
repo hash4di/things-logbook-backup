@@ -1,0 +1,14 @@
+script for backup Your logbook from Things.app (GTD app for Macintosh)
+
+Terminal:
+  $ ruby logbook.rb
+
+Clean Your logbook in Things.app     #after that Your Iphone Sync gonna be faster.
+
+Now You can research logbook_backup.html file in Spotlight. Just like it was still in Your Things.app, but bigger, faster, stronger ;]
+
+_\\// Live long and prosper.
+
+NOTE: script overrides previous file. This bug gonna be fixed in future.
+
+Please send some feedback, issues, etc.
