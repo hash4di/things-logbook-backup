@@ -10,7 +10,7 @@ html << "\t<head>\n"
 html << "\t\t<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\">\n" 
 html << "\t\t<link href=\"style.css\" media=\"screen, projection, print\" rel=\"stylesheet\" type=\"text/css\" />\n"
 
-todos[1..10].each do |todo|
+todos.each do |todo|
   html << "\t\t\t<li class=\"border_radius\">\n"
   html << "\t\t\t\t<span class=\"status\">&#10003</span>\n"
   html << "\t\t\t\t<span class=\"completion_date\">#{todo.completion_date.asctime}</span>\n"
