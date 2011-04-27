@@ -1,0 +1,31 @@
+body {
+  background: #b3b8c0;
+  font: Geeza Pro;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 4px;
+  padding-left: 10px;
+  margin-bottom:1px;
+  background: #d0d3d9;
+}
+
+.border_radius {
+  -webkit-border-radius: 3px;
+}
+.status {
+  font-size: 12px;
+}
+
+.completion_date {
+  color: #6a6a6a;
+  font: 9px/1.5 Geeza Pro;
+}
+
+.name {
+  padding-left: 1.4em;
+  font: 11px/1.5 Geeza Pro;
+  color: #49494a;
+}
+
