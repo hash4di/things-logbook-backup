@@ -6,9 +6,11 @@ todos = Things::List.logbook.todos
 html = ""
 html << "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2//EN\">\n"
 html << "<html>\n"
+
 html << "\t<head>\n"
 html << "\t\t<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\">\n" 
 html << "\t\t<link href=\"style.css\" media=\"screen, projection, print\" rel=\"stylesheet\" type=\"text/css\" />\n"
+html << "\t<head>\n"
 
 todos.each do |todo|
   html << "\t\t\t<li class=\"border_radius\">\n"
@@ -19,9 +21,10 @@ todos.each do |todo|
 end
 
 html << "\t\t</ul>\n"
-html << "\t</body>\n"
-html << "</html>"
 
-test = File.new("logbook_backup.html", "w")
-test.write(html)
-test.close
+html << "\t</body>\n"
+
+html << "</html>"
+backup = File.new("logbook_backup_#{Time.now}.html", "w")
+backup.write(html)
+backup.close
